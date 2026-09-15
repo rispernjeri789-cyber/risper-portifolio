@@ -1,16 +1,63 @@
-# React + Vite
+# Risper Njeri — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for Risper Njeri, a full-stack software developer.
+Built as a single-page React application showcasing skills, projects and
+contact information.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Deploy this project (e.g. with Vercel or Netlify) and add the link here
+once it's live.
 
-## React Compiler
+## Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — introduction, tech stack, resume download
+- **About** — who I am, what I enjoy building, my software engineering journey
+- **What I Do** — frontend, backend, database and full-stack capabilities
+- **Skills** — frontend, backend, database and tooling
+- **Featured Project** — Vehicle Rental Management System, with a live demo
+- **Other Projects** — Safari Tour & Travel, Hospital Appointment System,
+  Python Full-Stack Group Project
+- **Contact** — email, phone, GitHub, LinkedIn
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- Plain CSS with CSS variables (light/dark mode support)
+- ESLint
+
+## Getting Started
+
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Other scripts:
+
+```bash
+npm run build     # production build
+npm run preview   # preview the production build locally
+npm run lint       # run ESLint
+```
+
+## Project Structure
+
+```
+src/
+  components/   # one component per section (Hero, About, Skills, ...)
+  assets/       # profile photo and project screenshots
+  App.jsx       # assembles the page from components
+  index.css     # design tokens (colors, spacing) and base styles
+  App.css       # component and section styles
+```
+
+## To Do
+
+- Add resume PDF to `public/resume.pdf` so the Download Resume button works
+- Add LinkedIn URL
+- Add exact GitHub repo links for each project (currently point to the
+  GitHub profile)
